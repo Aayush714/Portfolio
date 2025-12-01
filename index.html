@@ -137,12 +137,6 @@
                 <h2 class="section-title">A quick summary of my most recent experiences:</h2>
                 <div class="experience-list">
                     <div class="experience-card">
-                        <div class="company">University of Houston</div>
-                        <div class="role">Research Assistant</div>
-                        <p class="exp-desc">Conducting research on distributed algorithms and resilient peer‑to‑peer networks. Collaborating on machine learning projects and teaching graduate courses.</p>
-                        <div class="dates">May 2024 – Dec 2025</div>
-                    </div>
-                    <div class="experience-card">
                         <div class="company">Pacific Northwest National Lab</div>
                         <div class="role">Data Scientist Intern</div>
                         <p class="exp-desc">Developed data analytics and machine learning models for high‑performance computing applications, optimizing workflows and visualizing results.</p>
@@ -154,15 +148,110 @@
                         <p class="exp-desc">Researched parallel algorithms and implemented prototypes in distributed computing environments using Slurm and MPI.</p>
                         <div class="dates">Aug 2021 – Dec 2021</div>
                     </div>
-                    <div class="experience-card">
-                        <div class="company">Timbl (RI Networks Pvt. Ltd.)</div>
-                        <div class="role">Network Analyst Intern</div>
-                        <p class="exp-desc">Performed network analysis, monitored infrastructure, and devised strategies to improve connectivity and efficiency.</p>
-                        <div class="dates">May 2018 – Sept 2018</div>
-                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Research / Publications Section -->
+<section id="research" class="projects-section section">
+    <div class="container">
+        <div class="section-label">Research</div>
+        <h2 class="section-title">Selected research papers and results</h2>
+
+        <div class="projects-grid">
+            <!-- Paper 1 -->
+            <div class="project-card">
+                <h3 class="project-title">
+                    Fully-Distributed Construction of Byzantine-Resilient Dynamic Peer-to-Peer Networks
+                </h3>
+                <p class="project-desc">
+                    Full paper presenting a fully-distributed protocol for constructing and maintaining
+                    Byzantine-resilient, sparse P2P overlays with high expansion and low diameter under
+                    stochastic churn. Includes theoretical guarantees and empirical evaluation.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">distributed algorithms</span>
+                    <span class="tag">Byzantine fault-tolerance</span>
+                    <span class="tag">peer-to-peer networks</span>
+                </div>
+                <a href="#" class="project-link" aria-label="Paper link"><span>↗</span></a>
+            </div>
+
+            <!-- Paper 2 -->
+            <div class="project-card">
+                <h3 class="project-title">
+                    Energy-Efficient Maximal Independent Sets in Radio Networks
+                </h3>
+                <p class="project-desc">
+                    Introduces algorithms for computing maximal independent sets in radio networks that
+                    significantly reduce energy usage while preserving strong theoretical guarantees.
+                    Published in DISC 2025 with a corresponding PODC ’25 brief announcement.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">distributed computing</span>
+                    <span class="tag">radio networks</span>
+                    <span class="tag">energy-efficient algorithms</span>
+                </div>
+                <a href="#" class="project-link" aria-label="Paper link"><span>↗</span></a>
+            </div>
+
+            <!-- Paper 3 -->
+            <div class="project-card">
+                <h3 class="project-title">
+                    Wake Up and Join Me! An Energy-Efficient Algorithm for Maximal Matching in Radio Networks
+                </h3>
+                <p class="project-desc">
+                    Proposes a randomized algorithm for maximal matching in radio networks that
+                    optimizes both running time and energy consumption, with results presented at
+                    DISC ’23 and a brief announcement at PODC ’21.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">maximal matching</span>
+                    <span class="tag">randomized algorithms</span>
+                    <span class="tag">radio networks</span>
+                </div>
+                <a href="#" class="project-link" aria-label="Paper link"><span>↗</span></a>
+            </div>
+
+            <!-- Paper 4 -->
+            <div class="project-card">
+                <h3 class="project-title">
+                    A Comprehensive Taxonomy for Code Datasets with Applications to Software Vulnerability Detection
+                </h3>
+                <p class="project-desc">
+                    Ongoing work building a structured taxonomy of code datasets and demonstrating how
+                    it supports benchmarking and improving software vulnerability detection models on
+                    high-quality datasets.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">software vulnerability detection</span>
+                    <span class="tag">datasets</span>
+                    <span class="tag">taxonomy</span>
+                </div>
+                <a href="#" class="project-link" aria-label="Paper link"><span>↗</span></a>
+            </div>
+
+            <!-- Paper 5 -->
+            <div class="project-card">
+                <h3 class="project-title">
+                    A Strongly-Polynomial Time Algorithm for Learning Noisy Linear Threshold Functions
+                </h3>
+                <p class="project-desc">
+                    Theoretical work (in preparation) presenting a simpler, faster, and parallel
+                    algorithm for learning noisy linear threshold functions with strong guarantees on
+                    running time and sample complexity.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">theoretical ML</span>
+                    <span class="tag">learning theory</span>
+                    <span class="tag">parallel algorithms</span>
+                </div>
+                <a href="#" class="project-link" aria-label="Paper link"><span>↗</span></a>
+            </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Projects Section -->
         <section id="projects" class="projects-section section">
@@ -187,7 +276,11 @@
                     </div>
                     <!-- Project 2 -->
                     <div class="project-card">
-                        <h3 class="project-title">Natural Language QA System</h3>
+                        <h3 class="project-title">
+                            <a ref="https://github.com/Aayush714/RoBERTa"target="_blank" rel="noopener noreferrer">
+                                Natural Language QA System
+                            </a>
+                        </h3>
                         <p class="project-desc">Designed a question‑answering system with the CommonsenseQA dataset, fine‑tuning RoBERTa models and engineering pipelines to achieve competitive accuracy.</p>
                         <div class="project-tags">
                             <span class="tag">NLP</span>
@@ -198,7 +291,11 @@
                     </div>
                     <!-- Project 3 -->
                     <div class="project-card">
-                        <h3 class="project-title">Code Clone Detector</h3>
+                        <h3 class="project-title">
+                            <a ref="https://github.com/Aayush714/PAT_Clone_Detector"target="_blank" rel="noopener noreferrer">
+                                Code Clone Detector
+                            </a>
+                        </h3>
                         <p class="project-desc">Implemented a machine learning framework that detects code clones using neural networks, training on BigCloneBench and leveraging graph representations.</p>
                         <div class="project-tags">
                             <span class="tag">software engineering</span>
