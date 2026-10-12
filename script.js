@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
             charIndex++;
         }
 
-        let typeSpeed = isDeleting ? 40 : 80;
+        let typeSpeed = isDeleting ? 15 : 25;
 
         if (!isDeleting && charIndex === currentWord.length) {
             typeSpeed = 2500; // pause at end
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             wordIndex = (wordIndex + 1) % words.length;
-            typeSpeed = 500;
+            typeSpeed = 500; //Brief pause before typing the next string
         }
         setTimeout(typeWriter, typeSpeed);
     }
