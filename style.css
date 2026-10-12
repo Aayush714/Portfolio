@@ -34,7 +34,7 @@ body {
     background-color: var(--background-color);
     color: var(--primary-color);
     line-height: 1.6;
-    padding-top: 80px; /* space for fixed header */
+    padding-top: 80px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
