@@ -1,4 +1,4 @@
-// Navigation toggle, theme toggle, and scroll effects
+// Navigation toggle, theme toggle, and scroll active links
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('navToggle');
     const nav = document.querySelector('.nav');
@@ -55,49 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4. Scroll-Triggered Reveal Animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show-section');
-                observer.unobserve(entry.target); // Animate once per page load
-            }
-        });
-    }, observerOptions);
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-
-    // 5. Copy to clipboard functionality
-    const copyButtons = document.querySelectorAll('.copy-btn');
-    copyButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetId = btn.getAttribute('data-copy');
-            const textElement = document.getElementById(targetId);
-            if (!textElement) return;
-            const text = textElement.innerText.trim();
-            
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(text).then(() => {
-                    btn.textContent = '✔';
-                    setTimeout(() => {
-                        btn.textContent = '📋';
-                    }, 2000);
-                }).catch(() => {
-                    console.warn('Clipboard write failed');
-                });
-            }
-        });
-    });
-
-    // 6. Set current year in footer
+    // 4. Set current year in footer (if element exists)
     const yearEl = document.getElementById('year');
     if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
