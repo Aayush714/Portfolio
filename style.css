@@ -73,7 +73,7 @@ img {
     font-weight: 600;
     color: var(--primary-color);
     text-decoration: none;
-}
+} /* <-- THIS BRACKET WAS MISSING */
 
 .nav ul {
     list-style: none;
