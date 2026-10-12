@@ -1,369 +1,248 @@
-/* Theme Variables */
-:root {
-    --primary-color: #0f3754;
-    --secondary-color: #556e87;
-    --accent-color: #356edd;
-    --background-color: #f5f7fa;
-    --card-color: #ffffff;
-    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Gupta – Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#home" class="logo">Aayush Gupta</a>
+            <nav class="nav" id="navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#service" class="nav-link">Service</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                🌙
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
 
-/* Dark Theme Overrides */
-body.dark-theme {
-    --primary-color: #f1f5f9;
-    --secondary-color: #94a3b8;
-    --accent-color: #38bdf8;
-    --background-color: #0f172a;
-    --card-color: #1e293b;
-    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section">
+            <div class="container">
+                <div class="hero-card">
+                    <div class="hero-image">
+                        <img src="aayush.png" alt="Aayush Gupta portrait">
+                    </div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Hi, I'm Aayush Gupta <span class="wave">👋</span></h1>
+                        <p class="hero-subtitle">PhD in Computer Science specializing in distributed algorithms, machine learning, and cybersecurity.</p>
+                        <ul class="hero-details">
+                            <li><span class="location-dot"></span> Sunnyvale, California, USA</li>
+                            <li><span class="status-dot"></span> Software Engineer at Google Cloud</li>
+                        </ul>
+                        <div class="hero-socials">
+                            <a href="https://github.com/Aayush714" aria-label="GitHub" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aayush-gupta-6a4913194" aria-label="LinkedIn" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=e7tXgZoAAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+                                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <div class="section-label">About Me</div>
+                <h2 class="section-title">Curious about me? Here you have it:</h2>
+                <div class="about-card">
+                    <div class="about-image">
+                        <img src="031ba13f-d130-4af3-b2d5-6f02aa3c239f.png" alt="Laptop and coffee on desk">
+                    </div>
+                    <div class="about-content">
+                        <p>I am a passionate researcher with a PhD in Computer Science from the University of Houston. My work bridges theoretical computer science with practical applications, focusing on distributed algorithms, network resilience and machine learning. I enjoy exploring the intersection of high‑performance computing, cybersecurity and artificial intelligence.</p>
+                        <p>Currently, I am applying this expertise at Google, where I build advanced machine learning models and data pipelines to automatically diagnose hardware failures across large-scale computing infrastructure. By integrating diverse performance metrics and sensor data, and designing analytics to track maintenance patterns, I help develop proactive systems that ensure precise, first-time fixes. This work minimizes manual troubleshooting and keeps our massive computer networks running at peak efficiency.</p>
+                        <p>Prior to my PhD, I completed my MSc at the University of New Mexico and earned a B.Tech. in Electronics &amp; Telecommunication. Along the way I interned at national laboratories and tech companies, gaining experience in data science, network analysis and software engineering. In my free time I share knowledge through teaching, mentoring and open‑source contributions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-html {
-    scroll-behavior: smooth;
-}
+        <!-- Skills Section -->
+        <section id="skills" class="projects-section section">
+            <div class="container">
+                <div class="section-label">Expertise</div>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">Programming & Languages</h3>
+                        <p class="project-desc">Python, C++, Java, Go, SQL, Bash/Shell</p>
+                        <div class="project-tags">
+                            <span class="tag">python</span>
+                            <span class="tag">c++</span>
+                            <span class="tag">go</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Systems & Cloud</h3>
+                        <p class="project-desc">Google Cloud Platform, Distributed Systems, High-Performance Computing, Kubernetes</p>
+                        <div class="project-tags">
+                            <span class="tag">gcp</span>
+                            <span class="tag">kubernetes</span>
+                            <span class="tag">distributed systems</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Machine Learning & Data</h3>
+                        <p class="project-desc">TensorFlow, PyTorch, Data Pipelines, Predictive Maintenance</p>
+                        <div class="project-tags">
+                            <span class="tag">pytorch</span>
+                            <span class="tag">machine learning</span>
+                            <span class="tag">analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    line-height: 1.6;
-    padding-top: 80px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+        <!-- Experience Section -->
+        <section id="experience" class="projects-section section">
+            <div class="container">
+                <div class="section-label">Career</div>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">Software Engineer</h3>
+                        <p class="project-desc">Google Cloud — Sunnyvale, CA</p>
+                        <p class="project-desc" style="font-size: 0.85rem; margin-top: 0.5rem;">Building advanced ML models and data pipelines for automated hardware failure diagnosis across large-scale computing infrastructure.</p>
+                        <div class="project-tags" style="margin-top: 1rem;">
+                            <span class="tag">google cloud</span>
+                            <span class="tag">ml engineering</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Graduate Researcher & Teaching Assistant</h3>
+                        <p class="project-desc">University of Houston — Houston, TX</p>
+                        <p class="project-desc" style="font-size: 0.85rem; margin-top: 0.5rem;">Conducted research on distributed algorithms, network resilience, and taught computer science courses.</p>
+                        <div class="project-tags" style="margin-top: 1rem;">
+                            <span class="tag">research</span>
+                            <span class="tag">teaching</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-img {
-    display: block;
-    max-width: 100%;
-}
+        <!-- Professional Service / Reviewing Section -->
+        <section id="service" class="projects-section section">
+            <div class="container">
+                <div class="section-label">Professional Service</div>
+                <h2 class="section-title">Conference Reviewing Experience</h2>
+                <div class="projects-grid">
+                    <!-- Review 1: ICISS 2025 -->
+                    <div class="project-card">
+                        <h3 class="project-title">ICISS 2025</h3>
+                        <p class="project-desc">21st International Conference on Information Systems Security</p>
+                        <div class="project-tags">
+                            <span class="tag">peer review</span>
+                            <span class="tag">information security</span>
+                            <span class="tag">cybersecurity</span>
+                        </div>
+                    </div>
+                    <!-- Review 2: ICDCN 2024 -->
+                    <div class="project-card">
+                        <h3 class="project-title">ICDCN 2024</h3>
+                        <p class="project-desc">25th International Conference on Distributed Computing and Networking</p>
+                        <div class="project-tags">
+                            <span class="tag">peer review</span>
+                            <span class="tag">distributed computing</span>
+                            <span class="tag">networking</span>
+                        </div>
+                    </div>
+                    <!-- Review 3: IPDPS 2023 -->
+                    <div class="project-card">
+                        <h3 class="project-title">IPDPS 2023</h3>
+                        <p class="project-desc">37th IEEE International Parallel and Distributed Processing Symposium</p>
+                        <div class="project-tags">
+                            <span class="tag">peer review</span>
+                            <span class="tag">parallel processing</span>
+                            <span class="tag">distributed systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <div class="section-label">Portfolio</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">Distributed Network Resilience Simulator</h3>
+                        <p class="project-desc">A framework for simulating fault tolerance and resilience metrics under large-scale node failure scenarios.</p>
+                        <div class="project-tags">
+                            <span class="tag">python</span>
+                            <span class="tag">distributed systems</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Infrastructure Failure Diagnosis Pipeline</h3>
+                        <p class="project-desc">ML-powered analytics pipeline mapping hardware telemetry data to automated remediation tasks.</p>
+                        <div class="project-tags">
+                            <span class="tag">tensorflow</span>
+                            <span class="tag">big data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Header */
-.site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--card-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-}
+        <!-- Contact Section -->
+        <section id="contact" class="projects-section section">
+            <div class="container">
+                <div class="section-label">Get in Touch</div>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="project-card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                    <p class="project-desc">I'm always open to discussing research, engineering collaborations, or exciting projects.</p>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="mailto:aayush@example.com" class="nav-link" style="color: var(--accent-color); font-weight: 600; font-size: 1.1rem;">aayush@example.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-}
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 2rem 0; color: var(--secondary-color); font-size: 0.9rem;">
+        <p>&copy; <span id="year"></span> Aayush Gupta. All rights reserved.</p>
+    </footer>
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    text-decoration: none;
-} /* <-- THIS BRACKET WAS MISSING */
-
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-    position: relative;
-    padding: 0.5rem 0;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--accent-color);
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
-}
-
-/* Theme Toggle Button Style */
-.theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: transform 0.2s ease;
-}
-
-.theme-toggle:hover {
-    transform: scale(1.1);
-}
-
-.nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-/* Sections */
-.section {
-    padding: 80px 0;
-    display: block;
-    width: 100%;
-}
-
-.section-label {
-    display: inline-block;
-    background: var(--primary-color);
-    color: var(--card-color);
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    margin-bottom: 0.5rem;
-}
-
-.section-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    color: var(--primary-color);
-}
-
-/* Hero Section */
-.hero-card {
-    background: var(--card-color);
-    border-radius: 20px;
-    box-shadow: var(--card-shadow);
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    width: 100%;
-    transition: background-color 0.3s ease;
-}
-
-.hero-image {
-    flex: 1 1 40%;
-    min-width: 250px;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px 0 0 20px;
-}
-
-.hero-content {
-    flex: 1 1 60%;
-    padding: 2rem;
-}
-
-.hero-title {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-.hero-subtitle {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    color: var(--secondary-color);
-}
-
-.hero-details {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 1.5rem;
-}
-
-.hero-details li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: var(--secondary-color);
-}
-
-.status-dot {
-    display: inline-block;
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 50%;
-    background: #43c463;
-    margin-right: 0.5rem;
-}
-
-.location-dot {
-    display: inline-block;
-    width: 0.7rem;
-    height: 0.7rem;
-    border-radius: 50%;
-    background: var(--accent-color);
-    margin-right: 0.5rem;
-}
-
-.hero-socials a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-right: 0.5rem;
-    background: var(--card-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 8px;
-    color: var(--primary-color);
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.hero-socials a svg {
-    width: 1rem;
-    height: 1rem;
-    flex-shrink: 0;
-    color: inherit;
-}
-
-.hero-socials a:hover {
-    background: var(--accent-color);
-    color: #fff;
-    border-color: var(--accent-color);
-}
-
-/* About Section */
-.about-card {
-    background: var(--card-color);
-    border-radius: 20px;
-    box-shadow: var(--card-shadow);
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    width: 100%;
-    transition: background-color 0.3s ease;
-}
-
-.about-image {
-    flex: 1 1 45%;
-    min-width: 250px;
-}
-
-.about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.about-content {
-    flex: 1 1 55%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-content p {
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
-}
-
-/* Projects & Service Section Cards */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.project-card {
-    background: var(--card-color);
-    border-radius: 12px;
-    box-shadow: var(--card-shadow);
-    padding: 1.5rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-    transition: background-color 0.3s ease;
-}
-
-.project-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.project-desc {
-    color: var(--secondary-color);
-    margin-bottom: 0.75rem;
-    flex-grow: 1;
-    font-size: 0.95rem;
-}
-
-.project-tags {
-    margin-bottom: 1rem;
-}
-
-.tag {
-    display: inline-block;
-    background: var(--primary-color);
-    color: var(--card-color);
-    padding: 0.2rem 0.6rem;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    margin-right: 0.5rem;
-    margin-bottom: 0.3rem;
-    text-transform: capitalize;
-}
-
-/* Responsive Navigation & Layout */
-@media (max-width: 768px) {
-    .nav ul {
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        background: var(--card-color);
-        padding: 1rem;
-        box-shadow: var(--card-shadow);
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-    }
-    .nav.open ul {
-        transform: translateX(0);
-    }
-    .nav-toggle {
-        display: block;
-    }
-    .hero-card, .about-card {
-        flex-direction: column;
-    }
-    .hero-image img, .about-image img {
-        border-radius: 20px 20px 0 0;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html>
