@@ -24,6 +24,10 @@
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                🌙
+            </button>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -40,7 +44,7 @@
                     </div>
                     <div class="hero-content">
                         <h1 class="hero-title">Hi, I'm Aayush Gupta <span class="wave">👋</span></h1>
-                        <p class="hero-subtitle"> PhD in Computer Science specializing in distributed algorithms, machine learning, and cybersecurity.</p>
+                        <p class="hero-subtitle">PhD in Computer Science specializing in distributed algorithms, machine learning, and cybersecurity.</p>
                         <ul class="hero-details">
                             <li><span class="location-dot"></span> Sunnyvale, California, USA</li>
                             <li><span class="status-dot"></span> Software Engineer at Google Cloud</li>
@@ -58,7 +62,6 @@
                                 </svg>
                             </a>
                             <a href="https://scholar.google.com/citations?user=e7tXgZoAAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener">
-                                <!-- Mortarboard icon to represent Google Scholar -->
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                                     <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
                                     <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
@@ -79,254 +82,22 @@
                     <div class="about-image">
                         <img src="031ba13f-d130-4af3-b2d5-6f02aa3c239f.png" alt="Laptop and coffee on desk">
                     </div>
-                        <div class="about-content">
-                            <p>I am a passionate researcher with a PhD in Computer Science from the University of Houston. My work bridges theoretical computer science with practical applications, focusing on distributed algorithms, network resilience and machine learning. I enjoy exploring the intersection of high‑performance computing, cybersecurity and artificial intelligence.</p>
-                            
-                            <p>Currently, I am applying this expertise at Google, where I build advanced machine learning models and data pipelines to automatically diagnose hardware failures across large-scale computing infrastructure. By integrating diverse performance metrics and sensor data, and designing analytics to track maintenance patterns, I help develop proactive systems that ensure precise, first-time fixes. This work minimizes manual troubleshooting and keeps our massive computer networks running at peak efficiency.</p>
-                            
-                            <p>Prior to my PhD, I completed my MSc at the University of New Mexico and earned a B.Tech. in Electronics &amp; Telecommunication. Along the way I interned at national laboratories and tech companies, gaining experience in data science, network analysis and software engineering. In my free time I share knowledge through teaching, mentoring and open‑source contributions.</p>
-                        </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section section">
-            <div class="container">
-                <div class="section-label">Skills</div>
-                <h2 class="section-title">The skills, tools, and technologies I am really good at:</h2>
-                <div class="skills-grid">
-                    <!-- Each skill item contains an icon and name -->
-                    <div class="skill-item">
-                        <div class="skill-icon" style="background-color:#3776AB;"><span>Py</span></div>
-                        <div class="skill-name">Python</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon" style="background-color:#004482;"><span>C</span></div>
-                        <div class="skill-name">C/C++</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon" style="background-color:#E87624;"><span>MAT</span></div>
-                        <div class="skill-name">MATLAB</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon" style="background-color:#EE4C2C;"><span>PT</span></div>
-                        <div class="skill-name">PyTorch</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon" style="background-color:#0176D3;"><span>MPI</span></div>
-                        <div class="skill-name">MPI/OpenMP</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon" style="background-color:#FF9900;"><span>AWS</span></div>
-                        <div class="skill-name">AWS/GCP</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon" style="background-color:#336791;"><span>SQL</span></div>
-                        <div class="skill-name">SQL/PostgreSQL</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon" style="background-color:#F05033;"><span>G/D</span></div>
-                        <div class="skill-name">Git/Docker</div>
+                    <div class="about-content">
+                        <p>I am a passionate researcher with a PhD in Computer Science from the University of Houston. My work bridges theoretical computer science with practical applications, focusing on distributed algorithms, network resilience and machine learning. I enjoy exploring the intersection of high‑performance computing, cybersecurity and artificial intelligence.</p>
+                        <p>Currently, I am applying this expertise at Google, where I build advanced machine learning models and data pipelines to automatically diagnose hardware failures across large-scale computing infrastructure. By integrating diverse performance metrics and sensor data, and designing analytics to track maintenance patterns, I help develop proactive systems that ensure precise, first-time fixes. This work minimizes manual troubleshooting and keeps our massive computer networks running at peak efficiency.</p>
+                        <p>Prior to my PhD, I completed my MSc at the University of New Mexico and earned a B.Tech. in Electronics &amp; Telecommunication. Along the way I interned at national laboratories and tech companies, gaining experience in data science, network analysis and software engineering. In my free time I share knowledge through teaching, mentoring and open‑source contributions.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section section">
-            <div class="container">
-                <div class="section-label">Experience</div>
-                <h2 class="section-title">A quick summary of my most recent experiences:</h2>
-                
-                <div class="experience-list">
-                    <div class="experience-card">
-                        <h3 class="company">Google Cloud</h3>
-                        <div class="role">Software Engineer</div>
-                        <p class="exp-desc">I work on building advanced machine learning models and data pipelines that automatically diagnose hardware failures in large-scale computing infrastructure.</p>
-                        <div class="dates">Jan 2026 – Present</div>
-                    </div>
-                    
-                    <div class="experience-card">
-                        <h3 class="company">Pacific Northwest National Lab</h3>
-                        <div class="role">Data Scientist Intern</div>
-                        <p class="exp-desc">Developed data analytics and machine learning models for high‑performance computing applications, optimizing workflows and visualizing results.</p>
-                        <div class="dates">May 2023 – Aug 2023</div>
-                    </div>
-                    
-                    <div class="experience-card">
-                        <h3 class="company">Center for Advanced Research Computing</h3>
-                        <div class="role">Graduate Research Assistant</div>
-                        <p class="exp-desc">Researched parallel algorithms and implemented prototypes in distributed computing environments using Slurm and MPI.</p>
-                        <div class="dates">Aug 2021 – Dec 2021</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Research / Publications Section -->
-<section id="research" class="projects-section section">
-    <div class="container">
-        <div class="section-label">Research</div>
-        <h2 class="section-title">Selected research papers and results</h2>
-
-        <div class="projects-grid">
-            <!-- Paper 1 -->
-            <div class="project-card">
-                <h3 class="project-title">
-                    Fully-Distributed Construction of Byzantine-Resilient Dynamic Peer-to-Peer Networks
-                </h3>
-                <p class="project-desc">
-                    Full paper presenting a fully-distributed protocol for constructing and maintaining
-                    Byzantine-resilient, sparse P2P overlays with high expansion and low diameter under
-                    stochastic churn. Includes theoretical guarantees and empirical evaluation.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">distributed algorithms</span>
-                    <span class="tag">Byzantine fault-tolerance</span>
-                    <span class="tag">peer-to-peer networks</span>
-                </div>
-                <a href="https://dl.acm.org/doi/10.1145/3694906.3743347" class="project-link" aria-label="Paper link"><span>↗</span></a>
-            </div>
-
-            <!-- Paper 2 -->
-            <div class="project-card">
-                <h3 class="project-title">
-                    Energy-Efficient Maximal Independent Sets in Radio Networks
-                </h3>
-                <p class="project-desc">
-                    Introduces algorithms for computing maximal independent sets in radio networks that
-                    significantly reduce energy usage while preserving strong theoretical guarantees.
-                    Published in DISC 2025 with a corresponding PODC ’25 brief announcement.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">distributed computing</span>
-                    <span class="tag">radio networks</span>
-                    <span class="tag">energy-efficient algorithms</span>
-                </div>
-                <a href="https://doi.org/10.4230/LIPIcs.DISC.2025.14" class="project-link" aria-label="Paper link"><span>↗</span></a>
-            </div>
-
-            <!-- Paper 3 -->
-            <div class="project-card">
-                <h3 class="project-title">
-                    Wake Up and Join Me! An Energy-Efficient Algorithm for Maximal Matching in Radio Networks
-                </h3>
-                <p class="project-desc">
-                    Proposes a randomized algorithm for maximal matching in radio networks that
-                    optimizes both running time and energy consumption, with results presented at
-                    DISC ’23 and a brief announcement at PODC ’21.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">maximal matching</span>
-                    <span class="tag">randomized algorithms</span>
-                    <span class="tag">radio networks</span>
-                </div>
-                <a href="https://link.springer.com/article/10.1007/s00446-022-00426-w" class="project-link" aria-label="Paper link"><span>↗</span></a>
-            </div>
-
-            </div>
-        </section>
-
-        <!-- Posters & Talks Section -->
-        <section id="talks" class="projects-section section">
-            <div class="container">
-                <div class="section-label">Posters &amp; Talks</div>
-                <h2 class="section-title">Selected posters and invited talks</h2>
-        
-                <div class="projects-grid">
-                    <!-- Item 1 -->
-                    <div class="project-card">
-                        <h3 class="project-title">
-                            Software Vulnerability Detection: A Grand Challenge for AI
-                        </h3>
-                        <p class="project-desc">
-                            Poster on the challenges of building robust and generalizable software vulnerability
-                            detection systems, highlighting dataset issues, evaluation pitfalls, and directions
-                            for future research.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">poster</span>
-                            <span class="tag">software security</span>
-                            <span class="tag">IEEE S&amp;P 2025</span>
-                        </div>
-                        <a href="https://sp2025.ieee-security.org/downloads/posters/sp25posters-final19.pdf"
-                           class="project-link" aria-label="View poster" target="_blank" rel="noopener">
-                            <span>↗</span>
-                        </a>
-                    </div>
-        
-                    <!-- Item 2 -->
-                    <div class="project-card">
-                        <h3 class="project-title">
-                            Fully-Distributed Construction of Byzantine-Resilient Dynamic Peer-to-Peer Networks
-                        </h3>
-                        <p class="project-desc">
-                            Conference talk at SPAA ’25 presenting a fully-distributed protocol for constructing
-                            sparse, high-expansion P2P overlays that are resilient to Byzantine failures and churn.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">talk</span>
-                            <span class="tag">Byzantine resilience</span>
-                            <span class="tag">SPAA 2025</span>
-                        </div>
-                        <a href="https://spaa.acm.org/program/"
-                           class="project-link" aria-label="Conference program" target="_blank" rel="noopener">
-                            <span>↗</span>
-                        </a>
-                    </div>
-        
-        
-                    <!-- Item 4 -->
-                    <div class="project-card">
-                        <h3 class="project-title">
-                            Comparative Analysis of Approaches to Software Vulnerability Detection on High-Quality Datasets
-                        </h3>
-                        <p class="project-desc">
-                            Poster presented during the U.S. DOT CYBER-CARE OST-R visit, showcasing empirical
-                            results for DistilBERT and TextRCNN on MVDSC and NVD datasets for software vulnerability detection.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">poster</span>
-                            <span class="tag">vulnerability detection</span>
-                            <span class="tag">CYBER-CARE</span>
-                        </div>
-                        <a href="https://www.uh.edu/cybercare/_files/cyber-care-program.pdf"
-                           class="project-link" aria-label="Event program" target="_blank" rel="noopener">
-                            <span>↗</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         <!-- Professional Service / Reviewing Section -->
         <section id="service" class="projects-section section">
             <div class="container">
                 <div class="section-label">Professional Service</div>
                 <h2 class="section-title">Conference Reviewing Experience</h2>
                 <div class="projects-grid">
-                    <!-- Review 1 -->
-                    <div class="project-card">
-                        <h3 class="project-title">IPDPS 2023</h3>
-                        <p class="project-desc">37th IEEE International Parallel and Distributed Processing Symposium</p>
-                        <div class="project-tags">
-                            <span class="tag">peer review</span>
-                            <span class="tag">parallel processing</span>
-                            <span class="tag">distributed systems</span>
-                        </div>
-                    </div>
-                    <!-- Review 2 -->
-                    <div class="project-card">
-                        <h3 class="project-title">ICDCN 2024</h3>
-                        <p class="project-desc">25th International Conference on Distributed Computing and Networking</p>
-                        <div class="project-tags">
-                            <span class="tag">peer review</span>
-                            <span class="tag">distributed computing</span>
-                            <span class="tag">networking</span>
-                        </div>
-                    </div>
-                    <!-- Review 3 -->
+                    <!-- Review 1: ICISS 2025 -->
                     <div class="project-card">
                         <h3 class="project-title">ICISS 2025</h3>
                         <p class="project-desc">21st International Conference on Information Systems Security</p>
@@ -336,106 +107,31 @@
                             <span class="tag">cybersecurity</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section section">
-            <div class="container">
-                <div class="section-label">Projects</div>
-                <h2 class="section-title">Some of the noteworthy projects I have built:</h2>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
+                    <!-- Review 2: ICDCN 2024 -->
                     <div class="project-card">
-                        <h3 class="project-title">
-                            Facial Expression Recognition
-                        </h3>
-                        <p class="project-desc">Built a machine learning pipeline to recognize facial expressions using HOG and Gabor features. Combined classical classifiers and CNNs with ensemble methods to boost accuracy.</p>
+                        <h3 class="project-title">ICDCN 2024</h3>
+                        <p class="project-desc">25th International Conference on Distributed Computing and Networking</p>
                         <div class="project-tags">
-                            <span class="tag">computer vision</span>
-                            <span class="tag">machine learning</span>
-                            <span class="tag">python</span>
+                            <span class="tag">peer review</span>
+                            <span class="tag">distributed computing</span>
+                            <span class="tag">networking</span>
                         </div>
-                        <a href="https://github.com/Aayush714/Facial-Detection" class="project-link" aria-label="Project link"><span>↗</span></a>
                     </div>
-                    <!-- Project 2 -->
+                    <!-- Review 3: IPDPS 2023 -->
                     <div class="project-card">
-                        <h3 class="project-title">
-                            Natural Language QA System
-                        </h3>
-                        <p class="project-desc">Designed a question‑answering system with the CommonsenseQA dataset, fine‑tuning RoBERTa models and engineering pipelines to achieve competitive accuracy.</p>
+                        <h3 class="project-title">IPDPS 2023</h3>
+                        <p class="project-desc">37th IEEE International Parallel and Distributed Processing Symposium</p>
                         <div class="project-tags">
-                            <span class="tag">NLP</span>
-                            <span class="tag">deep learning</span>
-                            <span class="tag">transformers</span>
+                            <span class="tag">peer review</span>
+                            <span class="tag">parallel processing</span>
+                            <span class="tag">distributed systems</span>
                         </div>
-                        <a href="https://github.com/Aayush714/RoBERTa" class="project-link" aria-label="Project link"><span>↗</span></a>
                     </div>
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <h3 class="project-title">
-                            Code Clone Detector
-                        </h3>
-                        <p class="project-desc">Implemented a machine learning framework that detects code clones using neural networks, training on BigCloneBench and leveraging graph representations.</p>
-                        <div class="project-tags">
-                            <span class="tag">software engineering</span>
-                            <span class="tag">machine learning</span>
-                            <span class="tag">graph ML</span>
-                        </div>
-                        <a href="https://github.com/Aayush714/PAT_Clone_Detector" class="project-link" aria-label="Project link"><span>↗</span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section section">
-            <div class="container">
-                <div class="section-label">Get in Touch</div>
-                <h2 class="section-title">What’s next? Feel free to reach out to me if you're looking for a collaborator, have a question, or simply want to connect.</h2>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="emoji">✉️</span>
-                        <span id="email-value">ayushguptastudent＠gmail.com</span>
-                        <button class="copy-btn" data-copy="email-value" aria-label="Copy email"><span class="emoji">📋</span></button>
-                    </div>
-                    <!-- <div class="contact-item">
-                        <span class="emoji">📞</span>
-                        <span id="phone-value">505‑313‑2769</span>
-                        <button class="copy-btn" data-copy="phone-value" aria-label="Copy phone"><span class="emoji">📋</span></button>
-                    </div> -->
-                </div>
-                <p class="contact-note">You may also find me on these platforms:</p>
-                <div class="contact-socials">
-                    <a href="https://github.com/Aayush714" aria-label="GitHub" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/aayush-gupta-6a4913194" aria-label="LinkedIn" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                        </svg>
-                    </a>
-                    <a href="https://scholar.google.com/citations?user=e7tXgZoAAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
-                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; <span id="year"></span> Aayush Gupta. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
