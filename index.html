@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="bgCanvas"></canvas>
+
     <!-- Header -->
     <header class="site-header">
         <div class="container header-content">
@@ -40,13 +43,13 @@
         <!-- Hero Section -->
         <section id="home" class="hero-section section">
             <div class="container">
-                <div class="hero-card">
+                <div class="hero-card reveal">
                     <div class="hero-image">
                         <img src="aayush.png" alt="Aayush Gupta portrait">
                     </div>
                     <div class="hero-content">
                         <h1 class="hero-title">Hi, I'm Aayush Gupta <span class="wave">👋</span></h1>
-                        <p class="hero-subtitle">PhD in Computer Science specializing in distributed algorithms, machine learning, and cybersecurity.</p>
+                        <p class="hero-subtitle"><span id="typedText"></span><span class="typed-cursor">|</span></p>
                         <ul class="hero-details">
                             <li><span class="location-dot"></span> Sunnyvale, California, USA</li>
                             <li><span class="status-dot"></span> Software Engineer at Google Cloud</li>
@@ -76,7 +79,7 @@
 
         <!-- About Section -->
         <section id="about" class="about-section section">
-            <div class="container">
+            <div class="container reveal">
                 <div class="section-label">About Me</div>
                 <h2 class="section-title">Curious about me? Here you have it:</h2>
                 <div class="about-card">
@@ -94,11 +97,11 @@
 
         <!-- Skills Section -->
         <section id="skills" class="projects-section section">
-            <div class="container">
+            <div class="container reveal">
                 <div class="section-label">Expertise</div>
                 <h2 class="section-title">Skills & Technologies</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">Programming & Languages</h3>
                         <p class="project-desc">Python, C++, Java, Go, SQL, Bash/Shell</p>
                         <div class="project-tags">
@@ -107,7 +110,7 @@
                             <span class="tag">go</span>
                         </div>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">Systems & Cloud</h3>
                         <p class="project-desc">Google Cloud Platform, Distributed Systems, High-Performance Computing, Kubernetes</p>
                         <div class="project-tags">
@@ -116,7 +119,7 @@
                             <span class="tag">distributed systems</span>
                         </div>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">Machine Learning & Data</h3>
                         <p class="project-desc">TensorFlow, PyTorch, Data Pipelines, Predictive Maintenance</p>
                         <div class="project-tags">
@@ -131,11 +134,11 @@
 
         <!-- Experience Section -->
         <section id="experience" class="projects-section section">
-            <div class="container">
+            <div class="container reveal">
                 <div class="section-label">Career</div>
                 <h2 class="section-title">Professional Experience</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">Software Engineer</h3>
                         <p class="project-desc">Google Cloud — Sunnyvale, CA</p>
                         <p class="project-desc" style="font-size: 0.85rem; margin-top: 0.5rem;">Building advanced ML models and data pipelines for automated hardware failure diagnosis across large-scale computing infrastructure.</p>
@@ -144,7 +147,7 @@
                             <span class="tag">ml engineering</span>
                         </div>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">Graduate Researcher & Teaching Assistant</h3>
                         <p class="project-desc">University of Houston — Houston, TX</p>
                         <p class="project-desc" style="font-size: 0.85rem; margin-top: 0.5rem;">Conducted research on distributed algorithms, network resilience, and taught computer science courses.</p>
@@ -159,12 +162,12 @@
 
         <!-- Professional Service / Reviewing Section -->
         <section id="service" class="projects-section section">
-            <div class="container">
+            <div class="container reveal">
                 <div class="section-label">Professional Service</div>
                 <h2 class="section-title">Conference Reviewing Experience</h2>
                 <div class="projects-grid">
                     <!-- Review 1: ICISS 2025 -->
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">ICISS 2025</h3>
                         <p class="project-desc">21st International Conference on Information Systems Security</p>
                         <div class="project-tags">
@@ -174,7 +177,7 @@
                         </div>
                     </div>
                     <!-- Review 2: ICDCN 2024 -->
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">ICDCN 2024</h3>
                         <p class="project-desc">25th International Conference on Distributed Computing and Networking</p>
                         <div class="project-tags">
@@ -184,7 +187,7 @@
                         </div>
                     </div>
                     <!-- Review 3: IPDPS 2023 -->
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">IPDPS 2023</h3>
                         <p class="project-desc">37th IEEE International Parallel and Distributed Processing Symposium</p>
                         <div class="project-tags">
@@ -199,11 +202,11 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects-section section">
-            <div class="container">
+            <div class="container reveal">
                 <div class="section-label">Portfolio</div>
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">Distributed Network Resilience Simulator</h3>
                         <p class="project-desc">A framework for simulating fault tolerance and resilience metrics under large-scale node failure scenarios.</p>
                         <div class="project-tags">
@@ -211,7 +214,7 @@
                             <span class="tag">distributed systems</span>
                         </div>
                     </div>
-                    <div class="project-card">
+                    <div class="project-card tilt-card">
                         <h3 class="project-title">Infrastructure Failure Diagnosis Pipeline</h3>
                         <p class="project-desc">ML-powered analytics pipeline mapping hardware telemetry data to automated remediation tasks.</p>
                         <div class="project-tags">
@@ -225,13 +228,13 @@
 
         <!-- Contact Section -->
         <section id="contact" class="projects-section section">
-            <div class="container">
+            <div class="container reveal">
                 <div class="section-label">Get in Touch</div>
                 <h2 class="section-title">Contact Me</h2>
-                <div class="project-card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <div class="project-card tilt-card" style="max-width: 600px; margin: 0 auto; text-align: center;">
                     <p class="project-desc">I'm always open to discussing research, engineering collaborations, or exciting projects.</p>
                     <div style="margin-top: 1.5rem;">
-                        <a href="mailto:ayushguptastudent@gmail.com" class="nav-link" style="color: var(--accent-color); font-weight: 600; font-size: 1.1rem;">ayushguptastudent@gmail.com</a>
+                        <a href="mailto:aayush@example.com" class="nav-link" style="color: var(--accent-color); font-weight: 600; font-size: 1.1rem;">aayush@example.com</a>
                     </div>
                 </div>
             </div>
@@ -239,7 +242,7 @@
     </main>
 
     <!-- Footer -->
-    <footer style="text-align: center; padding: 2rem 0; color: var(--secondary-color); font-size: 0.9rem;">
+    <footer style="text-align: center; padding: 2rem 0; color: var(--secondary-color); font-size: 0.9rem; position: relative; z-index: 2;">
         <p>&copy; <span id="year"></span> Aayush Gupta. All rights reserved.</p>
     </footer>
 
