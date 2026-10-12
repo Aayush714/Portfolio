@@ -129,12 +129,11 @@ img {
     cursor: pointer;
 }
 
-/* Sections & Transition Styling */
+/* Sections */
 .section {
     padding: 80px 0;
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    display: block;
+    width: 100%;
 }
 
 .section-label {
@@ -162,6 +161,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
 
@@ -262,6 +262,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    width: 100%;
     transition: background-color 0.3s ease;
 }
 
